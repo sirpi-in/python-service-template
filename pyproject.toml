@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "python-service-template"
+version = "0.1.0"
+description = "Template for a windvista Python/FastAPI microservice"
+authors = ["muzaffar-sirpi <129746616+muzaffar-sirpi@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.115.12"}
+coloredlogs = "^15.0.1"
+pydantic-settings = "^2.9.1"
+
+
+[tool.poetry.scripts]
+server = "src.run:server"
+local = "src.run:local"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

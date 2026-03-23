@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: python-service-template
+  description: Template for windvista Python/FastAPI microservices
+  annotations:
+    github.com/project-slug: sirpi-in/python-service-template
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - windvista
+    - microservice
+    - template
+spec:
+  type: template
+  lifecycle: production
+  owner: group:default/platform-engineers
+  system: windvista
